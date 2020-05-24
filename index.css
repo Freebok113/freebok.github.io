@@ -1,0 +1,130 @@
+div{
+    display: inline-block;
+    /*border: 1px solid black;*/
+}
+#outer{
+    display: block;
+    padding: 4px;
+    width: 90%;
+    height: 150px;
+    text-align: center;
+}
+#spacing{
+    display: block;
+    padding: 4px;
+    width: 90%;
+    height: 100px;
+}
+#buttonrow{
+    display: block;
+    padding: 4px;
+    width: 90%;
+    height: 200px;
+    text-align: left;
+
+}
+#logo, #score, #left, #right{
+    width: 13%;
+    height: 100%;
+}
+#titel, #mid{
+    width: 66%;
+    height: 100%;
+    
+}
+#screenshot{
+    vertical-align: middle;
+    width: 500px;
+    height: 500px;
+    
+}
+
+#img{
+max-width: 100%;
+max-height: 100%;
+}
+
+td{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid black;
+}
+ p{
+     text-align: center;
+ }
+
+ .red{
+     background-color: rgb(248, 122, 122);
+ }
+
+ .yellow{
+     background-color: rgb(245, 245, 112);
+ }
+
+ .green{
+     background-color: greenyellow;
+ }
+ .noborder{
+     text-align: left;
+     padding: 0px;
+     border: 0px;
+ }
+
+ .clearbutton{
+     background-color: rgb(248, 157, 147);
+     height: 40px;
+     width: 120px;
+ }
+ .copybutton{
+     background-color: springgreen;
+     height: 40px;
+     width: 120px;
+ }
+
+ canvas{
+     max-width: 100%;
+     max-height: 100%;
+ }
+
+
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid rgb(75, 74, 74);
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: rgb(243, 240, 240);
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .popuptxt{
+      color: white;
+      font-size: 22px;
+  }

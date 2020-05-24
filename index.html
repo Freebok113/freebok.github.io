@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="routines.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <title>Punten app</title>
+</head>
+<body onload="reset()"> 
+    <div id="outer">
+        <div id="logo">
+            <img id="img" src="img/logo.png">
+        </div>
+        <div id="titel"><h1>Beoordelingsformulier: De vlog</h1></div>
+        <div id="score">
+            <h1>Punten</h1> 
+            <table>
+                <tr>
+                    <td class="noborder"><h1><label id="totaal"></label></h1></td>
+                    <td class="noborder"><h1>/14</h1></td>
+                </tr>
+            </table>       
+        </div>
+    </div>
+    <div id="spacing"></div>
+    <div id="outer">
+        <div id="left"></div>
+        <div id="mid">
+            <!-- eerst popup al klaar maken -->
+            <div id="myModal" class="modal">
+                <div id="modal-content">
+                    <span class="close" onclick="closespan()">&times;</span>
+                    <p class = "popuptxt">kopieer deze afbeelding</p>
+                    <div id="screenshot"></div>
+                </div>
+            </div>
+            <!-- dan de tabel klaar maken-->
+            <table>
+                <tr>
+                    <td></td>
+                    <td class="green">      <p>2</p></td>
+                    <td class="yellow">     <p>1</p></td>
+                    <td class="red">        <p>0</p></td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>De slogan is catchy, creatief</td>
+                    <td class="green">      <input type="radio" name="1" value="G1" onclick="counter_one()"></td> 
+                    <td class="yellow">     <input type="radio" name="1" value="Y1" onclick="counter_one()"></td> 
+                    <td class="red">        <input type="radio" name="1" value="R1" onclick="counter_one()"></td>
+                    <td>De slogan is niet creatief</td>
+                </tr>
+                <tr>
+                    <td>Stijlfiguren (x2) aanwezig</td>
+                    <td class="green">      <input type="radio" name="2" value="G1" onclick="counter_one()"></td> 
+                    <td class="yellow">     <input type="radio" name="2" value="Y1" onclick="counter_one()"></td> 
+                    <td class="red">        <input type="radio" name="2" value="R1" onclick="counter_one()"></td>
+                    <td>Stijlfiguren (x2) niet aanwezig</td>
+                </tr>
+                <tr>
+                    <td>Vergeleken met andere producten</td>
+                    <td class="green">      <input type="radio" name="3" value="G1" onclick="counter_one()"></td> 
+                    <td class="yellow">     <input type="radio" name="3" value="Y1" onclick="counter_one()"></td> 
+                    <td class="red">        <input type="radio" name="3" value="R1" onclick="counter_one()"></td>
+                    <td>Niet vergeleken met andere producten</td>
+                </tr>
+                <tr>
+                    <td>Sluikreclame (prod naar keuze)</td>
+                    <td class="green">      <input type="radio" name="4" value="G1" onclick="counter_one()"></td> 
+                    <td class="yellow">     <input type="radio" name="4" value="Y1" onclick="counter_one()"></td> 
+                    <td class="red">        <input type="radio" name="4" value="R1" onclick="counter_one()"></td>
+                    <td>Geen Sluikreclame aanwezig/td>
+                </tr>
+                <tr>
+                    <td>De leerling is enthousiast en verteld gepassioneerd over het boek</td>
+                    <td class="green">      <input type="radio" name="5" value="G1" onclick="counter_one()"></td> 
+                    <td class="yellow">     <input type="radio" name="5" value="Y1" onclick="counter_one()"></td> 
+                    <td class="red">        <input type="radio" name="5" value="R1" onclick="counter_one()"></td>
+                    <td>De leerling is niet enthousiast en verteld niet gepassioneerd over het boek</td>
+                </tr>
+                <tr>
+                    <td>Leuke, aantrekkelijke creatieve vlog</td>
+                    <td class="green">      <input type="radio" name="6" value="G1" onclick="counter_one()"></td> 
+                    <td class="yellow">     <input type="radio" name="6" value="Y1" onclick="counter_one()"></td> 
+                    <td class="red">        <input type="radio" name="6" value="R1" onclick="counter_one()"></td>
+                    <td>Saaie, niet creatieve vlog</td>
+                </tr>
+                <tr>
+                    <td >De vlog duurt tussen 30 seconden en 1 minuut</td>
+                    <td class="green">      <input type="radio" name="7" value="G1" onclick="counter_one()"></td> 
+                    <td class="yellow">     <input type="radio" name="7" value="Y1" onclick="counter_one()"></td> 
+                    <td class="red">        <input type="radio" name="7" value="R1" onclick="counter_one()"></td>
+                    <td>De vlog is te kort / te lang</td>
+                </tr>
+            </table>
+            <div id="spacing"></div>
+            <div id="buttonrow">
+            <input class="copybutton"  type="button" value="Copy"  id = "myBtn" onclick="screenshot2()"/>
+            <input class="clearbutton" type="button" value="CLEAR" onclick="reset()"/>
+            </div>
+
+            
+        </div>
+        
+        <div id="right"></div>
+    </div>
+   
+</body>
+</html>
