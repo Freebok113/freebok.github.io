@@ -28,8 +28,14 @@ function counter_one(){
             if(row1[i].value == "R1"){
                 sub1 = 0;
             }
+            if(row1[i].value == "R2"){
+                sub1 = 0.5;
+            }
             if(row1[i].value == "Y1"){
                 sub1 = 1;
+            }
+            if(row1[i].value == "G2"){
+                sub1 = 1.5;
             }
             if(row1[i].value == "G1"){
                 sub1 = 2;
@@ -40,8 +46,14 @@ function counter_one(){
             if(row2[i].value == "R1"){
                 sub2 = 0;
             }
+            if(row2[i].value == "R2"){
+                sub2 = 0.5;
+            }
             if(row2[i].value == "Y1"){
                 sub2 = 1;
+            }
+            if(row2[i].value == "G2"){
+                sub2 = 1.5;
             }
             if(row2[i].value == "G1"){
                 sub2 = 2;
@@ -53,8 +65,14 @@ function counter_one(){
             if(row3[i].value == "R1"){
                 sub3 = 0;
             }
+            if(row3[i].value == "R2"){
+                sub3 = 0.5;
+            }
             if(row3[i].value == "Y1"){
                 sub3 = 1;
+            }
+            if(row3[i].value == "G2"){
+                sub3 = 1.5;
             }
             if(row3[i].value == "G1"){
                 sub3 = 2;
@@ -65,8 +83,14 @@ function counter_one(){
             if(row4[i].value == "R1"){
                 sub4 = 0;
             }
+            if(row4[i].value == "R2"){
+                sub4 = 0.5;
+            }
             if(row4[i].value == "Y1"){
                 sub4 = 1;
+            }
+            if(row4[i].value == "G2"){
+                sub4 = 1.5;
             }
             if(row4[i].value == "G1"){
                 sub4 = 2;
@@ -77,8 +101,14 @@ function counter_one(){
             if(row5[i].value == "R1"){
                 sub5 = 0;
             }
+            if(row5[i].value == "R2"){
+                sub5 = 0.5;
+            }
             if(row5[i].value == "Y1"){
                 sub5 = 1;
+            }
+            if(row5[i].value == "G2"){
+                sub5 = 1.5;
             }
             if(row5[i].value == "G1"){
                 sub5 = 2;
@@ -89,8 +119,14 @@ function counter_one(){
             if(row6[i].value == "R1"){
                 sub6 = 0;
             }
+            if(row6[i].value == "R2"){
+                sub6 = 0.5;
+            }
             if(row6[i].value == "Y1"){
                 sub6 = 1;
+            }
+            if(row6[i].value == "G2"){
+                sub6 = 1.5;
             }
             if(row6[i].value == "G1"){
                 sub6 = 2;
@@ -101,8 +137,14 @@ function counter_one(){
             if(row7[i].value == "R1"){
                 sub7 = 0;
             }
+            if(row7[i].value == "R2"){
+                sub7 = 0.5;
+            }
             if(row7[i].value == "Y1"){
                 sub7 = 1;
+            }
+            if(row7[i].value == "G2"){
+                sub7 = 1.5;
             }
             if(row7[i].value == "G1"){
                 sub7 = 2;
